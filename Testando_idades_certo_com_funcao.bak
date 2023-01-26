@@ -1,0 +1,32 @@
+
+<script>
+
+function	PulaLinha() {
+				document.write("<hr>");
+}
+
+function	mostra(frase) {
+				document.write("<big>" + frase + "</big>");
+				PulaLinha();
+	}
+
+var ano = 2022;
+var eu = 28;
+var karina = 39;
+var kaio = 32;
+var soma = eu + kaio + karina;
+var media = eu + kaio + karina / 3;
+var vezes = eu * kaio * karina;
+var menos = karina - kaio - eu;
+var produto = soma - media - menos / vezes;
+
+mostra("Eu nasci em: "	+	(ano-eu));
+mostra("A Karina nasceu em: " + (ano-karina));
+mostra("O Kaio nasceu em:" + (ano-kaio));
+mostra("A soma das idades e: " + (soma));
+mostra("A media das idades e: " + (media));
+mostra("A multiplicacao das idades e: " + (vezes));
+mostra("A subtracao das idades e: " + (menos));
+mostra("O produto de tudo e: " + produto.toFixed(3));
+
+</script>
