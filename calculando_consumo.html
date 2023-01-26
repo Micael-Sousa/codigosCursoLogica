@@ -1,0 +1,22 @@
+<h3> Alcool ou gasolina? </h3>
+
+<script>
+
+alert("Pra invocar a Mirla");
+
+var tanque = 45;
+var gasolina = 480;
+var alcool = 300;
+var ConsumoDeGasolina = gasolina / tanque;
+var ConsumoDeAlcool = alcool / tanque;
+var PrecoGasolina = 5.09;
+var PrecoAlcool = 4.90;
+var PrecoKMGas = (PrecoGasolina / ConsumoDeGasolina);
+var PrecoKMET = (PrecoAlcool / ConsumoDeAlcool);
+
+document.write("O consumo com gasolina e: " + Math.round(ConsumoDeGasolina) + "<br>");
+document.write("O consumo com alcool e: " + Math.round(ConsumoDeAlcool) + "<br>");
+document.write("O preco por KM da Gasolina e: " + PrecoKMGas.toFixed(3) + "<br>");
+document.write("O Preco por KM do Etanol e: " + PrecoKMET.toFixed(3) + "<br>");
+
+</script>
